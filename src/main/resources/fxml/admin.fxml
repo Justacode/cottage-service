@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.mustafin.controllers.AdminController">
+    <children>
+        <HBox layoutX="9.0" layoutY="14.0" prefHeight="60.0" prefWidth="313.0" />
+        <TabPane layoutX="9.0" layoutY="63.0" prefHeight="523.0" prefWidth="982.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Список коттеджей">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="275.0" prefWidth="574.0">
+                            <children>
+                                <TableView fx:id="cottageTable" layoutX="6.0" layoutY="63.0" prefHeight="382.0" prefWidth="971.0" />
+                                <HBox layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="836.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#showCottageForm" prefHeight="39.0" prefWidth="237.0" text="Добавить новый коттедж" />
+                              <Button mnemonicParsing="false" onAction="#deleteCottage" text="Удалить выбранный коттедж" />
+                              <Button mnemonicParsing="false" onAction="#showEditCottageForm" prefHeight="39.0" prefWidth="323.0" text="Редактировать выбранный коттедж" />
+                           </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Список аренд">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="rentTable" layoutX="6.0" layoutY="82.0" prefHeight="382.0" prefWidth="971.0" />
+                        <HBox layoutX="14.0" layoutY="14.0" prefHeight="39.0" prefWidth="836.0">
+                           <children>
+                              <Button onAction="#showRentForm" mnemonicParsing="false" prefHeight="39.0" prefWidth="237.0" text="Добавить новую аренду" />
+                              <Button onAction="#deleteRent" mnemonicParsing="false" text="Удалить выбранную аренду" />
+                              <Button onAction="#showEditRentForm" mnemonicParsing="false" prefHeight="39.0" prefWidth="323.0" text="Редактировать выбранную аренду" />
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <HBox layoutX="906.0" layoutY="14.0" prefHeight="39.0" prefWidth="80.0">
+            <children>
+                <Button onAction="#backToWelcome" mnemonicParsing="false" prefHeight="39.0" prefWidth="92.0" text="Выйти" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

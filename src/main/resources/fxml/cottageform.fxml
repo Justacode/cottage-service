@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.kpfu.itis.mustafin.controllers.forms.CottageFormController">
+    <children>
+        <TextField fx:id="cottageNumberField" layoutX="40.0" layoutY="115.0" prefHeight="39.0" prefWidth="82.0" />
+        <Text layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Номер коттеджа" />
+        <TextField fx:id="bedsNumberField" layoutX="195.0" layoutY="115.0" prefHeight="39.0" prefWidth="82.0" />
+        <Text layoutX="166.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кол-во спальных мест" />
+        <CheckBox fx:id="parkingCheckBox" layoutX="366.0" layoutY="115.0" mnemonicParsing="false" text="Парковочное место" />
+        <CheckBox fx:id="animalsCheckBox" layoutX="366.0" layoutY="154.0" mnemonicParsing="false" text="Въезд с животными" />
+        <CheckBox fx:id="childZoneCheckBox" layoutX="366.0" layoutY="200.0" mnemonicParsing="false" text="Детская зона" />
+        <CheckBox fx:id="gazeboCheckBox" layoutX="366.0" layoutY="246.0" mnemonicParsing="false" text="Беседка" />
+        <TextField fx:id="dailyRentField" layoutX="39.0" layoutY="194.0" />
+        <Text layoutX="54.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Суточная аренда в руб." />
+        <Button onAction="#submit" layoutX="254.0" layoutY="332.0" mnemonicParsing="false" text="Ок" />
+        <Button onAction="#close" layoutX="306.0" layoutY="332.0" mnemonicParsing="false" text="Отмена" />
+    </children>
+</AnchorPane>
